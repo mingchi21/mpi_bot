@@ -1,26 +1,48 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- ask_start_time
-- ask_whoami
-- ask_something
-- make_an_appointment
-- online_booking
-- start
-- greet
-- goodbye
-- thanks
-- affirm
-- deny
-- booking
-- ask_call_number
-- inform_caller_name
-- inform_notify_number
-- inform_queue
-- inform_caller
-- inform_cancel_notify
-- inform_no_notify
+- ask_start_time:
+    use_entities: true
+- ask_whoami:
+    use_entities: true
+- ask_something:
+    use_entities: true
+- make_an_appointment:
+    use_entities: true
+- online_booking:
+    use_entities: true
+- start:
+    use_entities: true
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- thanks:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- booking:
+    use_entities: true
+- ask_call_number:
+    use_entities: true
+- inform_caller_name:
+    use_entities: true
+- inform_notify_number:
+    use_entities: true
+- inform_queue:
+    use_entities: true
+- inform_caller:
+    use_entities: true
+- inform_cancel_notify:
+    use_entities: true
+- inform_no_notify:
+    use_entities: true
 entities:
 - inform
 - caller_name
@@ -39,16 +61,24 @@ entities:
 - LOC
 slots:
   main_caller_id:
-    type: text
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
     influence_conversation: true
   caller_name:
-    type: text
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
     influence_conversation: true
   notify_number:
-    type: any
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
     influence_conversation: false
   notify_queue:
-    type: any
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
     influence_conversation: false
 responses:
   utter_greet:
@@ -86,8 +116,8 @@ responses:
   utter_no_schedule_timing:
   - text: 🤭 抱歉，目前只提供叫號進度通知，時間表，請上網或電話洽詢
   utter_iam_bot:
-  - text: 您好：我是 M.PI(免排)雲端，人工智能機器人 🤖，很高興為您服務
-  - text: M.PI(免排)雲端，是一個 AI 數位助理🤖，幫助您節省等待時間
+  - text: 您好：我是 M.PI(免排)雲端，人工智能機器人 🤖，很高興為您服務，我的目前主要工作是主動通知您叫號進度
+  - text: M.PI(免排)雲端，是一個 AI 數位助理🤖，目前主要工作是主動通知叫號進度，幫助您節省等待時間
   utter_please_contact_by_phone:
   - text: ☎  煩請電話洽詢唷...
 actions:
@@ -95,3 +125,5 @@ actions:
 - action_query_caller
 - action_inform_queue
 - action_notify_number
+forms: {}
+e2e_actions: []
