@@ -1,0 +1,97 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- ask_start_time
+- ask_whoami
+- ask_something
+- make_an_appointment
+- online_booking
+- start
+- greet
+- goodbye
+- thanks
+- affirm
+- deny
+- booking
+- ask_call_number
+- inform_caller_name
+- inform_notify_number
+- inform_queue
+- inform_caller
+- inform_cancel_notify
+- inform_no_notify
+entities:
+- inform
+- caller_name
+- notify_number
+- notify_queue
+- CARDINAL
+- ORG
+- PERSON
+- GPE
+- DATE
+- NORP
+- TIME
+- EVENT
+- FAC
+- LANGUAGE
+- LOC
+slots:
+  main_caller_id:
+    type: text
+    influence_conversation: true
+  caller_name:
+    type: text
+    influence_conversation: true
+  notify_number:
+    type: any
+    influence_conversation: false
+  notify_queue:
+    type: any
+    influence_conversation: false
+responses:
+  utter_greet:
+  - text: 您好
+  utter_did_that_help:
+  - text: 請問是否解決您的問題呢?
+  utter_happy:
+  - text: 贊喔
+  utter_goodbye:
+  - custom:
+      sticker: https://www.mainpi.com/stickers/ok_bye.webp
+    text: OK
+  - text: See you.
+  utter_you_are_welcome:
+  - text: 😊 不客氣
+  - text: 😊 OK,沒問題
+  utter_not_provide:
+  - text: 抱歉沒有提供
+  utter_contact_by_phone:
+  - text: 請電話洽詢
+  utter_ask_caller_name:
+  - text: 請問詢問那一家？
+  utter_ask_notify_number:
+  - text: 請問 {name} 到幾號要通知您呢？
+  utter_no_booking_service:
+  - text: 🤭 抱歉，目前只提供叫號進度通知，預約請電話洽詢
+  utter_search_notfound:
+  - text: 🤔 疑~沒有找到 {name} 耶，煩請再確認一下....
+  utter_search_too_much:
+  - text: 有好幾家 {name}，請輸入更詳細的名稱
+  utter_cant_cancel:
+  - text: 通知無法取消，不過不用擔心，您只要忽略通知即可
+  utter_join_mainpi_if_notfound:
+  - text: 您尋找的單位可能尚未加入 'M.PI(免排)雲端叫號'，歡迎幫我們推薦給 "{name}" 使用，感謝您。詳細請查看 https://www.mainpi.com
+  utter_no_schedule_timing:
+  - text: 🤭 抱歉，目前只提供叫號進度通知，時間表，請上網或電話洽詢
+  utter_iam_bot:
+  - text: 您好：我是 M.PI(免排)雲端，人工智能機器人 🤖，很高興為您服務
+  - text: M.PI(免排)雲端，是一個 AI 數位助理🤖，幫助您節省等待時間
+  utter_please_contact_by_phone:
+  - text: ☎  煩請電話洽詢唷...
+actions:
+- action_start
+- action_query_caller
+- action_inform_queue
+- action_notify_number
