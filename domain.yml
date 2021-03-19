@@ -43,6 +43,10 @@ intents:
     use_entities: true
 - inform_no_notify:
     use_entities: true
+- update_call_number:
+    use_entities: true
+- over_number:
+    use_entities: true
 entities:
 - inform
 - caller_name
@@ -120,6 +124,10 @@ responses:
   - text: M.PI(免排)雲端，是一個 AI 數位助理🤖，目前主要工作是主動通知叫號進度，幫助您節省等待時間
   utter_please_contact_by_phone:
   - text: ☎  煩請電話洽詢唷...
+  utter_click_update_button:
+  - text: 請按 <🔔更新進度> 按鈕，就會顯示目前號碼
+  utter_over_number_hint:
+  - text: ❗ 主動叫號通知偶有延遲，為避免過號，請設定提前幾號通知，📣📣📣 也可以設定多個通知號碼
 actions:
 - action_start
 - action_query_caller

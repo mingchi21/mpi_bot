@@ -1,0 +1,24 @@
+version: "2.0"
+stories:
+- story: Ask update call number
+  steps:
+  - intent: inform_caller_name
+    entities:
+    - PERSON: 宏彥
+    - caller_name: 宏彥
+  - slot_was_set:
+    - caller_name: 宏彥
+  - action: action_query_caller
+  - slot_was_set:
+    - caller_name: 宏彥親子耳鼻喉科診所
+  - slot_was_set:
+    - main_caller_id: '936'
+  - slot_was_set:
+    - caller_name: 宏彥
+  - intent: update_call_number
+  - action: utter_click_update_button
+rules:
+- rule: Over number complaint
+  steps:
+  - intent: over_number
+  - action: utter_over_number_hint
