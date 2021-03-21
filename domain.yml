@@ -43,6 +43,10 @@ intents:
     use_entities: true
 - inform_no_notify:
     use_entities: true
+- inform_appointment:
+    use_entities: true
+- get_booking_url:
+    use_entities: true
 - update_call_number:
     use_entities: true
 - over_number:
@@ -133,5 +137,7 @@ actions:
 - action_query_caller
 - action_inform_queue
 - action_notify_number
+- action_inform_appointment
+- action_get_booking_url
 forms: {}
 e2e_actions: []

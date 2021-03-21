@@ -98,6 +98,7 @@
 - 現在幾號了
 - 現在勒
 - 現在到幾號了
+- 現在幾號呢
 
 ## intent:inform_caller_name
 - [竹安眼科](caller_name)
@@ -283,6 +284,16 @@
 - [民生](caller_name)漢唐
 - [李志昭眼科診所](caller_name)
 - [欣泉身心診所](caller_name)
+- 中和新生堂
+- [賴閔宦](PERSON)
+- [賴閩宦](PERSON)
+- [張振榕診所](caller_name)
+- [李柏鋒診所](caller_name)
+- [穩達](caller_name)
+- [胡進忠眼科](caller_name)
+- [周博治](PERSON)
+- [志勛](PERSON)皮膚科
+- [永吉](ORG)
 
 ## intent:inform_notify_number
 - 10
@@ -313,6 +324,7 @@
 - 4002
 - [15](notify_number)號提醒
 - 91
+- 抱歉，改[35](notify_number)號請通知
 
 ## intent:start
 - help
@@ -324,6 +336,7 @@
 - 不用告知了
 - 關閉通知
 - 取消
+- 不用再通知了
 
 ## intent:inform_no_notify
 - 不用通知
@@ -332,6 +345,7 @@
 - 幾點開始
 - 晚診幾點開始
 - 早上幾點看診
+- 婦產科營業到中午幾點
 
 ## intent:ask_whoami
 - 請問你是電腦系統嗎？
