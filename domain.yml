@@ -45,6 +45,8 @@ intents:
     use_entities: true
 - inform_appointment:
     use_entities: true
+- cancel_appointment:
+    use_entities: true
 - get_booking_url:
     use_entities: true
 - update_call_number:

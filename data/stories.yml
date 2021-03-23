@@ -17,6 +17,22 @@ stories:
     - caller_name: 宏彥
   - intent: update_call_number
   - action: utter_click_update_button
+- story: Ask booking
+  steps:
+  - intent: booking
+  - action: utter_ask_caller_name
+  - intent: inform_caller_name
+    entities:
+    - caller_name: 華幼
+  - slot_was_set:
+    - caller_name: 華幼
+  - action: action_query_caller
+  - slot_was_set:
+    - caller_name: 華幼診所
+  - slot_was_set:
+    - main_caller_id: '534'
+  - slot_was_set:
+    - notify_queue: 534&0&華幼診所
 rules:
 - rule: Over number complaint
   steps:
@@ -30,3 +46,7 @@ rules:
   steps:
   - intent: get_booking_url
   - action: action_get_booking_url
+- rule: Cancel appointment
+  steps:
+  - intent: cancel_appointment
+  - action: action_cancel_appointment
