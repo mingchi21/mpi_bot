@@ -15,6 +15,7 @@
 - stop
 - 沒有
 - 結束
+- Stop
 
 ## intent:thanks
 - thanks
@@ -55,6 +56,8 @@
 - 真的很久欸
 - 🤙
 - 很爛耶
+- 停
+- Clear
 
 ## intent:booking
 - 預約
@@ -69,6 +72,7 @@
 - 我想掛[張基亮](PERSON)醫師
 - 我要掛[張基亮](PERSON)
 - 我要預約
+- 我要預約掛號
 
 ## intent:ask_call_number
 - 有營業嗎
@@ -98,6 +102,7 @@
 - 現在勒
 - 現在到幾號了
 - 現在幾號呢
+- 現在幾號了？
 
 ## intent:inform_caller_name
 - [竹安眼科](caller_name)
@@ -293,6 +298,10 @@
 - [周博治](PERSON)
 - [志勛](PERSON)皮膚科
 - [永吉](ORG)
+- 羅棋守皮膚科
+- [身心](caller_name)[平衡診所](caller_name)
+- [晴天身心](caller_name)
+- [懷寧](caller_name)復健科
 
 ## intent:inform_notify_number
 - 10
@@ -333,6 +342,7 @@
 
 ## intent:start
 - help
+- Start
 
 ## intent:inform_cancel_notify
 - cancel
