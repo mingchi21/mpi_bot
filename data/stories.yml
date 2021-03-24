@@ -40,7 +40,7 @@ rules:
   - action: utter_over_number_hint
 - rule: Inform appointment
   steps:
-  - intent: inform_appointment
+  - intent: i_appointment
   - action: action_inform_appointment
 - rule: Get booking url
   steps:

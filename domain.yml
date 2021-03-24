@@ -11,10 +11,6 @@ intents:
     use_entities: true
 - ask_something:
     use_entities: true
-- make_an_appointment:
-    use_entities: true
-- online_booking:
-    use_entities: true
 - start:
     use_entities: true
 - greet:
@@ -35,15 +31,11 @@ intents:
     use_entities: true
 - inform_notify_number:
     use_entities: true
-- inform_queue:
+- i_queue:
     use_entities: true
-- inform_caller:
+- i_caller:
     use_entities: true
-- inform_cancel_notify:
-    use_entities: true
-- inform_no_notify:
-    use_entities: true
-- inform_appointment:
+- i_appointment:
     use_entities: true
 - cancel_appointment:
     use_entities: true
@@ -52,6 +44,10 @@ intents:
 - update_call_number:
     use_entities: true
 - over_number:
+    use_entities: true
+- no_notify:
+    use_entities: true
+- cancel_notify:
     use_entities: true
 entities:
 - inform
@@ -141,5 +137,6 @@ actions:
 - action_notify_number
 - action_inform_appointment
 - action_get_booking_url
+- action_cancel_appointment
 forms: {}
 e2e_actions: []

@@ -73,6 +73,7 @@
 - 我要掛[張基亮](PERSON)
 - 我要預約
 - 我要預約掛號
+- 預約掛號
 
 ## intent:ask_call_number
 - 有營業嗎
@@ -94,6 +95,7 @@
 - 排隊進度
 - 看診通知
 - 提醒
+- 看診號碼
 
 ## intent:update_call_number
 - 到幾號了
@@ -302,6 +304,10 @@
 - [身心](caller_name)[平衡診所](caller_name)
 - [晴天身心](caller_name)
 - [懷寧](caller_name)復健科
+- [詠恆中醫](caller_name)
+- [光彩](caller_name)
+- [楊啟坤](PERSON)耳鼻喉科
+- [楊啟坤](PERSON)耳鼻喉科診所
 
 ## intent:inform_notify_number
 - 10
@@ -344,7 +350,7 @@
 - help
 - Start
 
-## intent:inform_cancel_notify
+## intent:cancel_notify
 - cancel
 - 取消通知
 - 不用通知了
@@ -353,7 +359,7 @@
 - 取消
 - 不用再通知了
 
-## intent:inform_no_notify
+## intent:no_notify
 - 不用通知
 
 ## intent:ask_start_time
