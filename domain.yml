@@ -35,11 +35,11 @@ intents:
     use_entities: true
 - i_caller:
     use_entities: true
-- i_appointment:
+- i_appoint:
     use_entities: true
-- cancel_appointment:
+- i_can_appt:
     use_entities: true
-- get_booking_url:
+- i_booking_url:
     use_entities: true
 - update_call_number:
     use_entities: true

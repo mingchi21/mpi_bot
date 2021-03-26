@@ -16,6 +16,7 @@
 - 沒有
 - 結束
 - Stop
+- 關閉
 
 ## intent:thanks
 - thanks
@@ -42,6 +43,8 @@
 - 哈
 - 👍
 - 對
+- 👌🏻
+- 👌
 
 ## intent:deny
 - no
@@ -74,6 +77,7 @@
 - 我要預約
 - 我要預約掛號
 - 預約掛號
+- 進行預約
 
 ## intent:ask_call_number
 - 有營業嗎
@@ -96,6 +100,7 @@
 - 看診通知
 - 提醒
 - 看診號碼
+- 叫號進度
 
 ## intent:update_call_number
 - 到幾號了
@@ -308,6 +313,29 @@
 - [光彩](caller_name)
 - [楊啟坤](PERSON)耳鼻喉科
 - [楊啟坤](PERSON)耳鼻喉科診所
+- [居仁堂](caller_name)中醫診所
+- [大里仁愛](caller_name)醫院
+- [嘉恩](caller_name)耳鼻喉科診所
+- 竹北[上允](caller_name)耳鼻喉科
+- 林口[微笑](caller_name)
+- [進華](caller_name)聯合診所
+- [城林](caller_name)
+- [華祐診所](caller_name)
+- [禾康](caller_name)
+- [平衡身心診所](caller_name)幾號
+- [吳鎮宇](PERSON)
+- 運動會
+- [陳亮宇](PERSON) 耳鼻喉科
+- [平衡身心診所](caller_name)現在幾號
+- [安泰](caller_name)耳鼻喉科
+- [平衡身心診所](caller_name)到幾號
+- [志勳](caller_name)
+- 璺到底皮膚科
+- [林怡廷](PERSON)[皮膚](ORG)科診所
+- [新視界](caller_name)
+- [華幼診所](PERSON)
+- [現代皮膚科](caller_name)
+- [林榆森](caller_name)
 
 ## intent:inform_notify_number
 - 10
@@ -345,6 +373,7 @@
 - 8號請通知我
 - 18號請通知我
 - 33號請通知我
+- 28號
 
 ## intent:start
 - help

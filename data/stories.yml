@@ -33,6 +33,158 @@ stories:
     - main_caller_id: '534'
   - slot_was_set:
     - notify_queue: 534&0&華幼診所
+- story: Ask caller with multiple queue
+  steps:
+  - action: utter_ask_caller_name
+  - intent: inform_caller_name
+    entities:
+    - GPE: 金安心
+    - caller_name: 金安心
+  - slot_was_set:
+    - caller_name: 金安心
+  - action: action_query_caller
+  - slot_was_set:
+    - caller_name: 金安心醫院
+  - slot_was_set:
+    - main_caller_id: '632'
+  - slot_was_set:
+    - notify_queue: 632&0&金安心醫院
+  - intent: i_queue
+    entities:
+    - notify_queue: 632&0&兒科一診
+  - slot_was_set:
+    - caller_name: 金安心
+  - slot_was_set:
+    - notify_queue: 632&0&兒科一診
+  - action: action_inform_queue
+- story: Ask caller name
+  steps:
+  - intent: start
+  - action: action_start
+  - intent: ask_call_number
+  - action: utter_ask_caller_name
+- story: Ask caller with multiple queue 2
+  steps:
+  - intent: ask_call_number
+  - action: utter_ask_caller_name
+  - intent: inform_caller_name
+    entities:
+    - GPE: 金安心
+    - caller_name: 金安心
+  - slot_was_set:
+    - caller_name: 金安心
+  - action: action_query_caller
+  - slot_was_set:
+    - caller_name: 金安心醫院
+  - slot_was_set:
+    - main_caller_id: '632'
+  - slot_was_set:
+    - notify_queue: 632&0&金安心醫院
+  - intent: i_queue
+    entities:
+    - notify_queue: 632&0&兒科一診
+  - slot_was_set:
+    - notify_queue: 632&0&兒科一診
+  - action: action_inform_queue
+  - intent: inform_notify_number
+  - action: action_notify_number
+- story: Inform caller name first
+  steps:
+  - intent: inform_caller_name
+    entities:
+    - caller_name: 高端眼科
+  - slot_was_set:
+    - caller_name: 高端眼科
+  - action: action_query_caller
+  - slot_was_set:
+    - caller_name: 高端眼科診所
+  - slot_was_set:
+    - main_caller_id: '1215'
+  - slot_was_set:
+    - notify_queue: 1215&0&高端眼科診所
+  - intent: inform_notify_number
+  - action: action_notify_number
+- story: Set notify number and affirm
+  steps:
+  - intent: inform_caller_name
+    entities:
+    - caller_name: 高端眼科
+  - slot_was_set:
+    - caller_name: 高端眼科
+  - action: action_query_caller
+  - slot_was_set:
+    - caller_name: 高端眼科診所
+  - slot_was_set:
+    - main_caller_id: '1215'
+  - slot_was_set:
+    - notify_queue: 1215&0&高端眼科診所
+  - intent: inform_notify_number
+    entities:
+    - notify_number: '50'
+  - slot_was_set:
+    - notify_number: '50'
+  - action: action_notify_number
+  - intent: affirm
+  - slot_was_set:
+    - caller_name: 高端眼科
+  - slot_was_set:
+    - notify_number: '50'
+- story: Set notify number and thanks
+  steps:
+  - intent: inform_caller_name
+    entities:
+    - caller_name: 詠恆中醫
+  - slot_was_set:
+    - caller_name: 詠恆中醫
+  - action: action_query_caller
+  - slot_was_set:
+    - caller_name: 詠恆中醫診所
+  - slot_was_set:
+    - main_caller_id: '908'
+  - slot_was_set:
+    - notify_queue: 908&0&詠恆中醫診所
+  - intent: inform_notify_number
+    entities:
+    - notify_number: '50'
+  - slot_was_set:
+    - notify_number: '50'
+  - action: action_notify_number
+  - intent: thanks
+  - slot_was_set:
+    - caller_name: 詠恆中醫
+  - slot_was_set:
+    - notify_number: '50'
+  - action: utter_you_are_welcome
+- story: Set notify number and affirm 2
+  steps:
+  - intent: inform_caller_name
+    entities:
+    - ORG: 天莘
+    - caller_name: 天莘
+  - slot_was_set:
+    - caller_name: 天莘
+  - action: action_query_caller
+  - slot_was_set:
+    - caller_name: 天莘診所
+  - slot_was_set:
+    - main_caller_id: '1199'
+  - slot_was_set:
+    - notify_queue: 1199&0&天莘診所
+  - intent: i_queue
+    entities:
+    - notify_queue: 1199&0&婦產科202診
+  - slot_was_set:
+    - notify_queue: 1199&0&婦產科202診
+  - action: action_inform_queue
+  - intent: inform_notify_number
+  - action: action_notify_number
+  - slot_was_set:
+    - caller_name: 天莘
+  - slot_was_set:
+    - notify_queue: 1199&0&婦產科202診
+  - intent: affirm
+    entities:
+    - DATE: 👌🏻
 rules:
 - rule: Over number complaint
   steps:
@@ -40,13 +192,49 @@ rules:
   - action: utter_over_number_hint
 - rule: Inform appointment
   steps:
-  - intent: i_appointment
+  - intent: i_appoint
   - action: action_inform_appointment
 - rule: Get booking url
   steps:
-  - intent: get_booking_url
+  - intent: i_booking_url
   - action: action_get_booking_url
 - rule: Cancel appointment
   steps:
-  - intent: cancel_appointment
+  - intent: i_can_appt
   - action: action_cancel_appointment
+- rule: Over number complaint
+  steps:
+  - intent: over_number
+  - action: utter_over_number_hint
+- rule: Start
+  steps:
+  - intent: start
+  - action: action_start
+- rule: Inform queue
+  steps:
+  - intent: i_queue
+  - action: action_inform_queue
+- rule: Infrom notify number
+  steps:
+  - intent: inform_notify_number
+  - action: action_notify_number
+- rule: Update call number
+  steps:
+  - intent: update_call_number
+  - action: utter_click_update_button
+- rule: Inform caller
+  steps:
+  - intent: i_caller
+  - action: action_query_caller
+- rule: Thanks
+  steps:
+  - intent: thanks
+  - action: utter_you_are_welcome
+- rule: Ask who am i
+  steps:
+  - intent: ask_whoami
+  - action: utter_iam_bot
+- rule: Infrom caller name
+  steps:
+  - intent: inform_caller_name
+  - action: action_query_caller
