@@ -1,38 +1,5 @@
 version: "2.0"
 stories:
-- story: Ask update call number
-  steps:
-  - intent: inform_caller_name
-    entities:
-    - PERSON: 宏彥
-    - caller_name: 宏彥
-  - slot_was_set:
-    - caller_name: 宏彥
-  - action: action_query_caller
-  - slot_was_set:
-    - caller_name: 宏彥親子耳鼻喉科診所
-  - slot_was_set:
-    - main_caller_id: '936'
-  - slot_was_set:
-    - caller_name: 宏彥
-  - intent: update_call_number
-  - action: utter_click_update_button
-- story: Ask booking
-  steps:
-  - intent: booking
-  - action: utter_ask_caller_name
-  - intent: inform_caller_name
-    entities:
-    - caller_name: 華幼
-  - slot_was_set:
-    - caller_name: 華幼
-  - action: action_query_caller
-  - slot_was_set:
-    - caller_name: 華幼診所
-  - slot_was_set:
-    - main_caller_id: '534'
-  - slot_was_set:
-    - notify_queue: 534&0&華幼診所
 - story: Ask caller with multiple queue
   steps:
   - action: utter_ask_caller_name
@@ -57,7 +24,7 @@ stories:
   - slot_was_set:
     - notify_queue: 632&0&兒科一診
   - action: action_inform_queue
-- story: Ask caller name
+- story: Infrom caller name at start
   steps:
   - intent: start
   - action: action_start
@@ -185,6 +152,197 @@ stories:
   - intent: affirm
     entities:
     - DATE: 👌🏻
+- story: Over number hint
+  steps:
+  - intent: over_number
+  - action: utter_over_number_hint
+- story: Over number hint 2
+  steps:
+  - intent: inform_caller_name
+    entities:
+    - PERSON: 宏彥
+    - caller_name: 宏彥
+  - slot_was_set:
+    - caller_name: 宏彥
+  - action: action_query_caller
+  - slot_was_set:
+    - caller_name: 宏彥親子耳鼻喉科診所
+  - slot_was_set:
+    - main_caller_id: '936'
+  - slot_was_set:
+    - notify_queue: 936&0&宏彥親子耳鼻喉科診所
+  - intent: i_queue
+    entities:
+    - notify_queue: 936&0&一診
+  - slot_was_set:
+    - notify_queue: 936&0&一診
+  - action: action_inform_queue
+  - intent: inform_notify_number
+  - action: action_notify_number
+  - slot_was_set:
+    - caller_name: 宏彥
+  - slot_was_set:
+    - notify_queue: 936&0&一診
+  - intent: over_number
+  - action: utter_over_number_hint
+- story: Inform caller name first ID f78b95165f2c4ddf9a2fbdb72003f664
+  steps:
+  - intent: inform_caller_name
+    entities:
+    - caller_name: 竹安眼科
+  - slot_was_set:
+    - caller_name: 竹安眼科
+  - action: action_query_caller
+  - slot_was_set:
+    - caller_name: 竹安眼科診所
+  - slot_was_set:
+    - main_caller_id: '334'
+  - slot_was_set:
+    - notify_queue: 334&0&竹安眼科診所
+- story: Inform caller name first ID 166948ab0f0b4eb4b2e6524049219b3d
+  steps:
+  - intent: inform_caller_name
+    entities:
+    - ORG: 新生堂
+    - caller_name: 新生堂
+  - slot_was_set:
+    - caller_name: 新生堂
+  - action: action_query_caller
+  - intent: i_caller
+    entities:
+    - inform: 579&中和新生堂中醫診
+  - action: action_query_caller
+  - slot_was_set:
+    - main_caller_id: '579'
+  - slot_was_set:
+    - caller_name: 中和新生堂中醫診
+  - slot_was_set:
+    - notify_queue: 579&0&中和新生堂中醫診
+- story: Inform caller name first ID 0d44256b20d94bef9afd13ae7661f226
+  steps:
+  - intent: inform_caller_name
+    entities:
+    - caller_name: 上允
+  - slot_was_set:
+    - caller_name: 上允
+  - action: action_query_caller
+  - intent: i_caller
+    entities:
+    - inform: 975&竹北上允耳鼻喉科
+  - action: action_query_caller
+  - slot_was_set:
+    - main_caller_id: '975'
+  - slot_was_set:
+    - caller_name: 竹北上允耳鼻喉科
+  - slot_was_set:
+    - notify_queue: 975&0&竹北上允耳鼻喉科
+- story: Inform caller name first ID 51d9f46f599f41999618c6b2c4551e18
+  steps:
+  - intent: inform_caller_name
+    entities:
+    - caller_name: 晴天
+  - slot_was_set:
+    - caller_name: 晴天
+  - action: action_query_caller
+  - slot_was_set:
+    - caller_name: 晴天身心診所
+  - slot_was_set:
+    - main_caller_id: '583'
+  - slot_was_set:
+    - notify_queue: 583&0&晴天身心診所
+  - intent: i_queue
+    entities:
+    - notify_queue: 583&0&一診
+  - slot_was_set:
+    - notify_queue: 583&0&一診
+  - action: action_inform_queue
+  - intent: inform_notify_number
+  - action: action_notify_number
+- story: Ask call number firstID a6ffcf0a5fc0410cbf30ce6b0e1ade38
+  steps:
+  - intent: ask_call_number
+  - action: utter_ask_caller_name
+  - intent: inform_caller_name
+    entities:
+    - caller_name: 照海
+  - slot_was_set:
+    - caller_name: 照海
+  - action: action_query_caller
+  - slot_was_set:
+    - caller_name: 照海中醫診所
+  - slot_was_set:
+    - main_caller_id: '1059'
+  - slot_was_set:
+    - notify_queue: 1059&0&照海中醫診所
+- story: Inform caller name first ID f016cbac368d463a94f4dd461ce4e27a
+  steps:
+  - intent: inform_caller_name
+    entities:
+    - PERSON: 莊豐如
+  - action: action_query_caller
+- story: Infrom bookingID 223ab0b418ff4887bd906a3c40e6f211
+  steps:
+  - intent: booking
+  - action: utter_ask_caller_name
+  - intent: inform_caller_name
+    entities:
+    - caller_name: 華幼
+  - slot_was_set:
+    - caller_name: 華幼
+  - action: action_get_booking_url
+- story: Inform bookingID 734c7903c02b423b93d94104565fd43e
+  steps:
+  - intent: booking
+  - action: utter_ask_caller_name
+  - intent: inform_caller_name
+    entities:
+    - caller_name: 華幼
+  - slot_was_set:
+    - caller_name: 華幼
+  - action: action_get_booking_url
+- story: Story from Conversation ID cf5b0f756a4d4f74a36465b44c4b2137
+  steps:
+  - intent: booking
+  - action: utter_ask_caller_name
+  - intent: inform_caller_name
+    entities:
+    - GPE: 金安心
+    - caller_name: 金安心
+  - slot_was_set:
+    - caller_name: 金安心
+  - action: action_get_booking_url
+- story: Inform booking ID aed2039dcab04b3c8fa8c21b56038a08
+  steps:
+  - intent: booking
+  - action: utter_ask_caller_name
+  - intent: inform_caller_name
+    entities:
+    - PERSON: 楊啟坤
+  - action: action_get_booking_url
+- story: Infrom caller then booking ID 2bef1fad6d6244de91341f01f9f48f0f
+  steps:
+  - intent: start
+  - action: action_start
+  - intent: inform_caller_name
+    entities:
+    - PERSON: 楊啟坤
+  - action: action_query_caller
+  - slot_was_set:
+    - caller_name: 楊啟坤耳鼻喉科診所
+  - slot_was_set:
+    - main_caller_id: '919'
+  - slot_was_set:
+    - notify_queue: 919&0&楊啟坤耳鼻喉科診所
+  - intent: booking
+  - action: utter_ask_caller_name
+  - intent: inform_caller_name
+    entities:
+    - PERSON: 楊啟坤
+  - action: action_get_booking_url
+- story: Inform caller name first ID f0c0532620d84d55a0f87b9b45582d44
+  steps:
+  - intent: inform_caller_name
+  - action: action_query_caller
 rules:
 - rule: Over number complaint
   steps:
@@ -202,10 +360,6 @@ rules:
   steps:
   - intent: i_can_appt
   - action: action_cancel_appointment
-- rule: Over number complaint
-  steps:
-  - intent: over_number
-  - action: utter_over_number_hint
 - rule: Start
   steps:
   - intent: start
@@ -221,7 +375,7 @@ rules:
 - rule: Update call number
   steps:
   - intent: update_call_number
-  - action: utter_click_update_button
+  - action: action_update_call_number
 - rule: Inform caller
   steps:
   - intent: i_caller
@@ -234,7 +388,3 @@ rules:
   steps:
   - intent: ask_whoami
   - action: utter_iam_bot
-- rule: Infrom caller name
-  steps:
-  - intent: inform_caller_name
-  - action: action_query_caller

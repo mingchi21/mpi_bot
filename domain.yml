@@ -138,5 +138,6 @@ actions:
 - action_inform_appointment
 - action_get_booking_url
 - action_cancel_appointment
+- action_update_call_number
 forms: {}
 e2e_actions: []

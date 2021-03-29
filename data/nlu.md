@@ -27,6 +27,7 @@
 - 謝
 - 愛妳
 - 酷喔
+- Got it
 
 ## intent:affirm
 - yes
@@ -45,6 +46,7 @@
 - 對
 - 👌🏻
 - 👌
+- 哈哈
 
 ## intent:deny
 - no
@@ -61,6 +63,7 @@
 - 很爛耶
 - 停
 - Clear
+- [鴻佑](caller_name)
 
 ## intent:booking
 - 預約
@@ -101,6 +104,9 @@
 - 提醒
 - 看診號碼
 - 叫號進度
+- 看診進度\n[張](PERSON)基亮
+- 看珍進度
+- 看整進度
 
 ## intent:update_call_number
 - 到幾號了
@@ -110,6 +116,7 @@
 - 現在到幾號了
 - 現在幾號呢
 - 現在幾號了？
+- 更新進度
 
 ## intent:inform_caller_name
 - [竹安眼科](caller_name)
@@ -336,6 +343,86 @@
 - [華幼診所](PERSON)
 - [現代皮膚科](caller_name)
 - [林榆森](caller_name)
+- [明選眼科](caller_name)
+- [同仁中醫](caller_name)
+- [四季](caller_name)[皮膚](ORG)
+- [民生](caller_name)[漢唐中醫診所](caller_name)
+- [洪碩壎](caller_name)小兒科診所
+- [微笑診所](caller_name)
+- 健新耳鼻喉科
+- [周志哲診所](PERSON)
+- 羅東博愛醫院
+- [晨欣親子](caller_name)
+- [魏嘉宏](PERSON)[皮膚](ORG)科診[所](caller_name)
+- [博安家醫](caller_name)
+- [林正修診所](caller_name)
+- [健新診所](caller_name)
+- [陽光](caller_name)皮膚科
+- [藝文風澤](caller_name)
+- [健新](caller_name)
+- [照海中醫](caller_name)
+- 徐嘉賢診
+- [林正修](caller_name)
+- [陽光](caller_name)[皮膚](ORG)
+- [鼎好](caller_name)
+- [哈哈親子](caller_name)
+- [高瑞眼科](caller_name)
+- [賴敏宦](PERSON)
+- [蕭正輝](PERSON)小兒科
+- [名傑](caller_name)骨科
+- 二林皮膚
+- [家安](caller_name)小兒科
+- 何秋燕皮膚診所
+- [戴國城](PERSON)
+- [二林](caller_name)皮膚科
+- [璺到底](caller_name)皮膚專科
+- [志勛](PERSON)[皮膚](ORG)科診所
+- [我家牛排](caller_name) 245
+- 桃園[北天府](caller_name)[龍天宮](ORG)
+- [鄭仲欽](PERSON)
+- [光點眼科](caller_name)[光點眼科](caller_name)[光點眼科](caller_name)
+- [家安小兒科診所](caller_name)[家安](caller_name)小兒科診所
+- [微笑](caller_name)
+- 林口[微笑親子](caller_name)耳鼻喉科
+- [陳亮宇](PERSON)耳鼻喉科診[所](caller_name)
+- [藍正州](caller_name)
+- [至祥診所](caller_name)
+- [博群](caller_name)
+- [台安](caller_name)
+- 寰東耳鼻喉科
+- [蕭正輝](PERSON)兒科診所
+- [曹景雄](PERSON)小兒科
+- [四維診所](caller_name)
+- [四維](caller_name)
+- [羅林](caller_name)
+- 林口[微笑](caller_name)耳鼻喉科
+- [軒琪](caller_name)
+- 軒琪耳鼻喉科
+- 明早[華幼診所](caller_name)
+- [居仁堂中醫](caller_name)
+- [上允](caller_name)耳鼻喉
+- 竹北[上允](caller_name)
+- [念生](caller_name)耳鼻喉
+- [晉安](caller_name)
+- [忠群](caller_name)
+- [陳文喬](PERSON)
+- [念生](caller_name)耳鼻喉科
+- [吉田診所](caller_name)
+- [晨安](caller_name)
+- 請問員林[明明眼科](caller_name)[眼科](ORG)
+- [龍欣](caller_name)
+- [心樂活診所](caller_name)
+- [陳正傑](PERSON)骨科
+- [馥林](caller_name)中醫診所
+- [啟禾](caller_name)[皮膚](ORG)科門診
+- [林怡廷](PERSON)
+- [文聖診所](caller_name)
+- [黃勇學](PERSON)
+- [馨生](caller_name)
+- [陳宜穎](PERSON)皮膚科
+- 桃園[仁愛中醫](caller_name)
+- [鄭曦](caller_name)
+- [宏彥](caller_name)耳鼻喉科
 
 ## intent:inform_notify_number
 - 10
@@ -374,6 +461,14 @@
 - 18號請通知我
 - 33號請通知我
 - 28號
+- 31號
+- 200
+- 46號
+- 11號
+- 138
+- 2020
+- [啟禾](caller_name)門診28號
+- 45
 
 ## intent:start
 - help
@@ -411,3 +506,5 @@
 - 過號才通知？
 - 已經過號了
 - 過號才通知
+- 這個通知不準確
+- 這個通知不准
