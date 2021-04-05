@@ -10,12 +10,7 @@
 - 再見
 - 拜拜
 - Bye
-- 閉嘴
-- 停止
-- stop
 - 沒有
-- 結束
-- Stop
 - 關閉
 
 ## intent:thanks
@@ -28,6 +23,9 @@
 - 愛妳
 - 酷喔
 - Got it
+- Thanks
+- 了解。謝謝您
+- 3Q
 
 ## intent:affirm
 - yes
@@ -47,6 +45,9 @@
 - 👌🏻
 - 👌
 - 哈哈
+- Ok
+- 沒事
+- 👍👍
 
 ## intent:deny
 - no
@@ -63,7 +64,9 @@
 - 很爛耶
 - 停
 - Clear
-- [鴻佑](caller_name)
+- STOP
+- 閉嘴
+- 結束
 
 ## intent:booking
 - 預約
@@ -87,7 +90,6 @@
 - 有看診嗎
 - 幾號了
 - 幾號了？
-- 現在幾號？
 - 請問幾號了
 - 請問幾號
 - 看診進度
@@ -96,7 +98,6 @@
 - 要排隊通知
 - 叫號通知
 - 問事進度
-- 現在是幾號
 - 看诊进度
 - 請問目前看診號碼？
 - 排隊進度
@@ -104,9 +105,12 @@
 - 提醒
 - 看診號碼
 - 叫號進度
-- 看診進度\n[張](PERSON)基亮
+- 看診進度\n[張基亮](PERSON)
 - 看珍進度
 - 看整進度
+- 目前
+- 看診紀錄
+- 進度
 
 ## intent:update_call_number
 - 到幾號了
@@ -117,6 +121,9 @@
 - 現在幾號呢
 - 現在幾號了？
 - 更新進度
+- 目前叫號
+- 現在是幾號
+- 現在幾號？
 
 ## intent:inform_caller_name
 - [竹安眼科](caller_name)
@@ -137,7 +144,7 @@
 - [嘉恩](caller_name)
 - [金安心](caller_name)
 - [竹安](caller_name)
-- 璺到底
+- [璺到底](caller_name)
 - 晴天
 - 立悅皮膚科
 - 何秋燕皮膚科
@@ -158,9 +165,9 @@
 - [高端眼科診所](caller_name)
 - [羅棋守](PERSON)皮膚科診所
 - [莊豐如診所](caller_name)
-- 我家牛排
+- [我家牛排](caller_name)
 - [紀冠廷診所](caller_name)
-- 我家牛排 中和店
+- [我家牛排](caller_name) 中和店
 - [天莘](caller_name)婦產科
 - [傅仁良](PERSON)
 - [傅仁良診所](caller_name)
@@ -195,7 +202,7 @@
 - [曾政峰耳鼻喉科](ORG)
 - [永吉外科](ORG)
 - [曾憲彰](PERSON)耳鼻喉科診所
-- [璺到底](ORG)[皮膚科診所](ORG)
+- [璺到底](caller_name)[皮膚科診所](ORG)
 - [禾安](caller_name)耳鼻喉科診所
 - [詠恆](caller_name)
 - [張基亮](PERSON)
@@ -207,7 +214,7 @@
 - [耀耀親子眼科](caller_name)
 - [行願中醫](ORG)
 - [洪瑞聰](PERSON)
-- 照海
+- [照海](caller_name)
 - [進安](caller_name)
 - [居仁堂](caller_name)
 - [向陽](caller_name)
@@ -331,13 +338,12 @@
 - [禾康](caller_name)
 - [平衡身心診所](caller_name)幾號
 - [吳鎮宇](PERSON)
-- 運動會
 - [陳亮宇](PERSON) 耳鼻喉科
 - [平衡身心診所](caller_name)現在幾號
 - [安泰](caller_name)耳鼻喉科
 - [平衡身心診所](caller_name)到幾號
 - [志勳](caller_name)
-- 璺到底皮膚科
+- [璺到底](caller_name)皮膚科
 - [林怡廷](PERSON)[皮膚](ORG)科診所
 - [新視界](caller_name)
 - [華幼診所](PERSON)
@@ -378,13 +384,13 @@
 - [璺到底](caller_name)皮膚專科
 - [志勛](PERSON)[皮膚](ORG)科診所
 - [我家牛排](caller_name) 245
-- 桃園[北天府](caller_name)[龍天宮](ORG)
+- 桃園[北天府](caller_name)[龍天宮](caller_name)
 - [鄭仲欽](PERSON)
-- [光點眼科](caller_name)[光點眼科](caller_name)[光點眼科](caller_name)
+- [光點眼科](caller_name)
 - [家安小兒科診所](caller_name)[家安](caller_name)小兒科診所
 - [微笑](caller_name)
 - 林口[微笑親子](caller_name)耳鼻喉科
-- [陳亮宇](PERSON)耳鼻喉科診[所](caller_name)
+- [陳亮宇](PERSON)耳鼻喉科診所
 - [藍正州](caller_name)
 - [至祥診所](caller_name)
 - [博群](caller_name)
@@ -398,7 +404,7 @@
 - 林口[微笑](caller_name)耳鼻喉科
 - [軒琪](caller_name)
 - 軒琪耳鼻喉科
-- 明早[華幼診所](caller_name)
+- [明早](TIME)[華幼診所](caller_name)
 - [居仁堂中醫](caller_name)
 - [上允](caller_name)耳鼻喉
 - 竹北[上允](caller_name)
@@ -423,6 +429,118 @@
 - 桃園[仁愛中醫](caller_name)
 - [鄭曦](caller_name)
 - [宏彥](caller_name)耳鼻喉科
+- 林口[健雄](caller_name)
+- [立悅](caller_name)
+- [賴閔宦](PERSON)小兒科
+- [宏彥](caller_name)兒科
+- [幸聲](caller_name)
+- 湯瑪士
+- 沙鹿 何秋燕
+- [四季](caller_name)皮膚科
+- [中醫](ORG)
+- 徐嘉賢
+- [魏嘉宏](PERSON)皮膚科
+- [永欣](caller_name)
+- [黃輝鵬](PERSON)皮膚科
+- [耀耀](caller_name)
+- [龍合骨科](caller_name)
+- [右東](caller_name)
+- [基隆](GPE)[陳怡穎](caller_name)皮膚科
+- [明明](caller_name)
+- [我家牛排](caller_name) 中和
+- [永欣中醫](caller_name)
+- [光彩親子](caller_name)
+- [陳士源](PERSON)[中醫](ORG)
+- [平安](caller_name)
+- [平安](caller_name)聯合診所
+- [許嘉賢](PERSON)
+- 阮皮膚科
+- [祥威](caller_name)
+- [新亞東](caller_name)
+- 甘霖
+- [新竹](GPE)[趙永康](caller_name)
+- [吳振宇](PERSON)
+- [林口](GPE)[微笑親子](caller_name)
+- [晴天身心診所](caller_name)
+- [光彩](caller_name)皮膚科
+- [右東診所](caller_name)
+- [桃園](GPE)[光彩親子](caller_name)皮膚專科聯合診所
+- 皮膚科
+- [桃園](GPE)層峰[診所](caller_name)
+- [張賴妙](PERSON)
+- [麒安診所](caller_name)
+- [正馨](caller_name)
+- 阮皮膚
+- [右東中醫](caller_name)
+- [盧正欽](caller_name)
+- [華陽中醫](caller_name)
+- [同仁堂](caller_name)
+- [楊啓坤](PERSON)耳鼻喉科
+- [九大自由](caller_name)
+- [王銘燦](PERSON)[皮膚診所](ORG)
+- [馨生](caller_name)小兒科
+- [安泰診所](caller_name)
+- 正馨聯合診所
+- [德信診所](caller_name)
+- [曾政峰](PERSON)
+- [葉晉榮](PERSON)診所
+- [平安診所](caller_name)
+- [林中立](PERSON)
+- [藝文風澤中醫](caller_name)
+- [20Skin](caller_name) 醫美集團
+- [詠美身心診所](caller_name)
+- [優勢](caller_name)
+- [陳炯旭診所](caller_name)
+- [舒頤](caller_name)
+- [員林](GPE)[基督教](caller_name)醫院
+- [啟禾](caller_name)
+- [景升](caller_name)
+- [林瑜森](PERSON)
+- [張家強](PERSON)
+- [龍欣](caller_name)耳鼻喉科
+- [立康診所](caller_name)
+- 林口[微笑親子](caller_name)耳鼻喉科診所
+- [敬康](caller_name)
+- 奇美婦產科
+- [陳昱](PERSON)傑骨科
+- 林口[建雄診所](caller_name)
+- [建雄](caller_name)
+- [忠群診所](caller_name)
+- [活力](caller_name)復健
+- [晴天身心科](caller_name)
+- [立安親子診所](caller_name)
+- 台大[現代](caller_name)皮膚科
+- 台大[小太陽](caller_name)耳鼻喉科診所
+- [南投](caller_name)[馨生](caller_name)
+- [陳亮宇](PERSON)耳鼻喉科
+- [賴敏煥](PERSON)
+- 南投[馨生](caller_name)婦產科
+- 金安心 婦一診
+- [風澤](caller_name)
+- [大同](caller_name)耳鼻喉科
+- [藍正州](PERSON)小兒科
+- [興明](caller_name)[皮膚](ORG)科眼科聯合診所
+- [徐嘉賢](PERSON)診所
+- [葉明宏](PERSON)外科
+- [馬偕](caller_name)
+- [張基亮](PERSON)皮膚科
+- [游新](PERSON)
+- [懷恩堂中醫](caller_name)
+- [林忠立](PERSON)
+- [曾憲章](PERSON)
+- [禾豐](caller_name)骨科
+- [德謙](caller_name)耳鼻喉科
+- [安家](caller_name)小兒科
+- [向陽](caller_name)診所
+- [徐家賢](caller_name)
+- [維品身心診所](caller_name)
+- [洪瑞禎](PERSON)
+- [陳亮宇](PERSON)耳鼻
+- [微笑親子](caller_name)
+- 舋到底
+- [志勛](PERSON)[皮膚](ORG)
+- 請問[員林](GPE)[明明眼科](caller_name)
+- [家安](caller_name)小兒科診所
 
 ## intent:inform_notify_number
 - 10
@@ -454,12 +572,12 @@
 - [15](notify_number)號提醒
 - 91
 - 抱歉，改[35](notify_number)號請通知
-- 6號通知
-- 16號通知
-- 22號通知
-- 8號請通知我
-- 18號請通知我
-- 33號請通知我
+- [6號](notify_number)通知
+- [16號](notify_number)通知
+- [22號](notify_number)通知
+- [8號](notify_number)請通知我
+- [18號](notify_number)請通知我
+- [33號](notify_number)請通知我
 - 28號
 - 31號
 - 200
@@ -467,8 +585,21 @@
 - 11號
 - 138
 - 2020
-- [啟禾](caller_name)門診28號
+- [啟禾](caller_name)門診[28號](notify_number)
 - 45
+- 200號
+- 63
+- 150號
+- 129號
+- 129
+- 49
+- 3號
+- 96號
+- 112
+- 82號
+- 99
+- 12號
+- 7號
 
 ## intent:start
 - help
@@ -485,6 +616,8 @@
 
 ## intent:no_notify
 - 不用通知
+- 不必通知
+- 不要通知
 
 ## intent:ask_start_time
 - 幾點開始
@@ -498,6 +631,7 @@
 - 這是電腦嗎?
 - 這是真人服務嗎?
 - 什麼都可以問嗎？
+- 請問眼皮癢可以看皮膚科嗎？
 
 ## intent:ask_something
 - 請教一下
