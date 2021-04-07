@@ -49,6 +49,8 @@ intents:
     use_entities: true
 - cancel_notify:
     use_entities: true
+- booking_change:
+    use_entities: true
 entities:
 - inform
 - caller_name
@@ -65,6 +67,7 @@ entities:
 - FAC
 - LANGUAGE
 - LOC
+- PRODUCT
 slots:
   main_caller_id:
     type: rasa.shared.core.slots.TextSlot
@@ -130,6 +133,8 @@ responses:
   - text: 請按 <🔔更新進度> 按鈕，就會顯示目前號碼
   utter_over_number_hint:
   - text: ❗ 主動叫號通知偶有延遲，為避免過號，請設定提前幾號通知，📣📣📣 也可以設定多個通知號碼
+  utter_please_rebooking:
+  - text: 請取消預約後，重新預約，或請電話洽詢
 actions:
 - action_start
 - action_query_caller

@@ -343,6 +343,35 @@ stories:
   steps:
   - intent: inform_caller_name
   - action: action_query_caller
+- story: Booking change ID e0da3ed91cb8400c97ecc82766526d2f
+  steps:
+  - intent: booking_change
+  - action: utter_please_rebooking
+- story: Want cancel notify after set notify number ID 952163e46fab4e95953b202785ec2cb1
+  steps:
+  - intent: start
+  - action: action_start
+  - intent: inform_caller_name
+    entities:
+    - GPE: 中和
+    - caller_name: 我家牛排
+  - slot_was_set:
+    - caller_name: 我家牛排
+  - action: action_query_caller
+  - slot_was_set:
+    - caller_name: 我家牛排中和店
+  - slot_was_set:
+    - main_caller_id: '1102'
+  - slot_was_set:
+    - notify_queue: 1102&0&我家牛排中和店
+  - intent: inform_notify_number
+    entities:
+    - CARDINAL: '269'
+  - action: action_notify_number
+  - intent: cancel_notify
+  - slot_was_set:
+    - caller_name: 我家牛排
+  - action: utter_cant_cancel
 rules:
 - rule: Over number complaint
   steps:

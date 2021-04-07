@@ -12,6 +12,9 @@
 - Bye
 - 沒有
 - 關閉
+- Stop
+- stop
+- 停止
 
 ## intent:thanks
 - thanks
@@ -84,6 +87,8 @@
 - 我要預約掛號
 - 預約掛號
 - 進行預約
+- 預約號
+- [4/5](TIME)晚上
 
 ## intent:ask_call_number
 - 有營業嗎
@@ -541,6 +546,59 @@
 - [志勛](PERSON)[皮膚](ORG)
 - 請問[員林](GPE)[明明眼科](caller_name)
 - [家安](caller_name)小兒科診所
+- [徐大昇](caller_name)
+- [我家牛排](caller_name)中和
+- [安泰](caller_name)
+- [趙永康](caller_name)
+- [禾康](caller_name)耳鼻喉科
+- [安家](caller_name)小兒科診所
+- [周博治](PERSON)婦產科
+- [活力](caller_name)
+- 桃園[龍天宮](ORG)
+- 中和
+- [員林基督](caller_name)
+- [鴻佑](caller_name)
+- [龍新](caller_name)耳鼻喉科
+- [北天府](caller_name)[龍天宮](ORG)
+- [璺到底](caller_name)皮膚診所
+- [敬康](caller_name)耳鼻喉科診所
+- [戴國城](PERSON)診所
+- [陳士源](PERSON)中醫診所
+- [曹景雄](PERSON)小兒科第一診
+- [陳信宏](PERSON)
+- [謙華](caller_name)動物醫院
+- 曹錦雄小兒科
+- 曹錦雄
+- [新視界眼科](caller_name)
+- [新视界眼科](caller_name)
+- [光彩](caller_name)[皮膚親子](ORG)
+- 漢諾威
+- [宜昇](caller_name)復健
+- [王明燦](PERSON)
+- [陳文喬](PERSON)骨科
+- [湯瑪士](caller_name)[親子](caller_name)兒科診所
+- [成功聯合診所](caller_name)
+- [進安身心](caller_name)科診所
+- [承光](ORG)
+- [高俊傑](PERSON)
+- [馬大元](PERSON)診所
+- [陳建富](PERSON)
+- 成功耳鼻喉科
+- [宏彥親子診所](caller_name)
+- [盛軒](caller_name)耳鼻喉科診所
+- [微笑](caller_name)耳鼻喉科
+- [明耀眼科](caller_name)
+- [嘉禾診所](caller_name)
+- [國華](caller_name)
+- [康兒診所](caller_name)
+- [亞東](caller_name)
+- 台大
+- [陳志平](PERSON)
+- [宜昇](caller_name)
+- [曾正峰](caller_name)
+- 加恩[診所](caller_name)
+- [好日子](caller_name)[仁愛](LOC)
+- [平衡身心](caller_name)科診所
 
 ## intent:inform_notify_number
 - 10
@@ -600,6 +658,9 @@
 - 99
 - 12號
 - 7號
+- 55號
+- 更新為277
+- 12
 
 ## intent:start
 - help
@@ -625,6 +686,7 @@
 - 早上幾點看診
 - 婦產科營業到中午幾點
 - 看診時間
+- 目前有休診嗎？
 
 ## intent:ask_whoami
 - 請問你是電腦系統嗎？
@@ -642,3 +704,7 @@
 - 過號才通知
 - 這個通知不準確
 - 這個通知不准
+
+## intent:booking_change
+- 請問可以改約7:30嗎
+- 修改預約
