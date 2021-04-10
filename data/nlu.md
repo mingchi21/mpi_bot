@@ -29,6 +29,7 @@
 - Thanks
 - 了解。謝謝您
 - 3Q
+- 好的謝謝
 
 ## intent:affirm
 - yes
@@ -70,6 +71,7 @@
 - STOP
 - 閉嘴
 - 結束
+- 靠腰喔
 
 ## intent:booking
 - 預約
@@ -129,6 +131,7 @@
 - 目前叫號
 - 現在是幾號
 - 現在幾號？
+- 現在
 
 ## intent:inform_caller_name
 - [竹安眼科](caller_name)
@@ -599,6 +602,50 @@
 - 加恩[診所](caller_name)
 - [好日子](caller_name)[仁愛](LOC)
 - [平衡身心](caller_name)科診所
+- [介壽](caller_name)耳鼻喉科
+- [漢堂](caller_name)[民生](caller_name)中醫診所
+- 成功皮膚科
+- [陳信宏](PERSON)小兒科
+- [德儀](caller_name)[皮膚](ORG)科診所
+- [啟禾](caller_name)[皮膚](ORG)科診所
+- [翁仲仁](caller_name)
+- [德儀](caller_name)[皮膚](ORG)專科診所
+- [李志昭眼科](caller_name)
+- 金安心醫院
+- [耀明眼科](caller_name)
+- [德儀](caller_name)[皮膚](ORG)
+- [志勳](caller_name)[皮膚](ORG)科診所
+- [同仁](caller_name)
+- [仁愛好日子診所](caller_name)
+- [行願中](ORG)醫診所
+- [陽光](caller_name)[皮膚](ORG)科診所
+- [行願](ORG)
+- [陳昱](PERSON)傑骨科診所
+- [陳毅傑](PERSON)骨科診所
+- [德儀](caller_name)皮膚科
+- 110年南瀛
+- [林怡廷](PERSON)[皮膚](ORG)
+- [四季](caller_name)
+- [詠美](caller_name)
+- [詠美身心](caller_name)
+- [李志昭](caller_name)
+- [建新](caller_name)耳鼻喉科
+- Dr.徐嘉賢
+- [成大](caller_name)醫院
+- 林口[耀耀親子眼科](caller_name)
+- [陳](PERSON)[伊潁](PERSON)
+- [勻品](caller_name)
+- [原平](caller_name)
+- [辰安](caller_name)耳鼻
+- [漢唐](caller_name)
+- [張賴](PERSON)妙詢皮膚科
+- [活力](caller_name)復健診所
+- [張益豪](PERSON)耳鼻喉科
+- 順和堂[中醫](caller_name)
+- [龍潭眼科診所](GPE)
+- [建新診所](caller_name)
+- 內湖成功聯合診所
+- [高瑞](caller_name)
 
 ## intent:inform_notify_number
 - 10
@@ -661,10 +708,23 @@
 - 55號
 - 更新為277
 - 12
+- 14
+- [23](notify_number)號叫我
+- [22](notify_number)號叫我
+- 婦產科202診到[20](notify_number)號
+- 29號
+- 29
+- 14號
+- [84](notify_number)號通知我
+- [43](notify_number)號可否提醒？
+- 我是17號
+- 3
+- 到14號
 
 ## intent:start
 - help
 - Start
+- start
 
 ## intent:cancel_notify
 - cancel
@@ -704,7 +764,12 @@
 - 過號才通知
 - 這個通知不準確
 - 這個通知不准
+- 過號了
 
 ## intent:booking_change
 - 請問可以改約7:30嗎
 - 修改預約
+- 可以幫我排到下午看診嗎
+
+## intent:cancel_register
+- 我要取消掛號

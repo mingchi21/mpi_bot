@@ -417,3 +417,7 @@ rules:
   steps:
   - intent: ask_whoami
   - action: utter_iam_bot
+- rule: Cancel register
+  steps:
+  - intent: cancel_register
+  - action: utter_contact_by_phone

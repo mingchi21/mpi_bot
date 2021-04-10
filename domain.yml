@@ -51,6 +51,10 @@ intents:
     use_entities: true
 - booking_change:
     use_entities: true
+- end:
+    use_entities: true
+- cancel_register:
+    use_entities: true
 entities:
 - inform
 - caller_name
@@ -68,6 +72,7 @@ entities:
 - LANGUAGE
 - LOC
 - PRODUCT
+- ORDINAL
 slots:
   main_caller_id:
     type: rasa.shared.core.slots.TextSlot
@@ -107,7 +112,7 @@ responses:
   utter_not_provide:
   - text: 抱歉沒有提供
   utter_contact_by_phone:
-  - text: 請電話洽詢
+  - text: 📞 請電話聯繫
   utter_ask_caller_name:
   - text: 請問詢問那一家？
   utter_ask_notify_number:
