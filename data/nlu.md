@@ -646,6 +646,10 @@
 - [建新診所](caller_name)
 - 內湖成功聯合診所
 - [高瑞](caller_name)
+- [李亭峰](ORG)耳鼻喉科
+- [李亭峰](caller_name)
+- [李亭鋒](caller_name)
+- [邢志宇](PERSON)耳鼻喉科
 
 ## intent:inform_notify_number
 - 10
