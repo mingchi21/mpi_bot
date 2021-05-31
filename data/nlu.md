@@ -650,6 +650,24 @@
 - [李亭峰](caller_name)
 - [李亭鋒](caller_name)
 - [邢志宇](PERSON)耳鼻喉科
+- [邢志宇](PERSON)[志宇](PERSON)
+- 刑[志宇](PERSON)耳鼻喉科診所
+- [刑志宇](PERSON)
+- [周哲志診](PERSON)所
+- 周哲志
+- 桃園市[健新診所](caller_name)
+- 蘆洲成功耳鼻喉科
+- [蔡侑](caller_name)儒
+- [蔡侑如](caller_name)
+- [佳安](caller_name)
+- [藍正州](PERSON)小兒科診所
+- 濟揚
+- [澳門羅子超醫生](caller_name)[羅子超](PERSON)醫生
+- [羅子](caller_name)超
+- 謝碧[祥眼科](caller_name)
+- [吳文](PERSON)豹
+- [心寬診所](caller_name)
+- [康澄](caller_name)
 
 ## intent:inform_notify_number
 - 10
@@ -738,6 +756,8 @@
 - 關閉通知
 - 取消
 - 不用再通知了
+- 忽略通知
+- 幫我取消
 
 ## intent:no_notify
 - 不用通知
@@ -758,6 +778,7 @@
 - 這是真人服務嗎?
 - 什麼都可以問嗎？
 - 請問眼皮癢可以看皮膚科嗎？
+- ?
 
 ## intent:ask_something
 - 請教一下
