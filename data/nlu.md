@@ -10,7 +10,6 @@
 - 再見
 - 拜拜
 - Bye
-- 沒有
 - 關閉
 - Stop
 - stop
@@ -30,6 +29,8 @@
 - 了解。謝謝您
 - 3Q
 - 好的謝謝
+- 👍👍
+- 👍
 
 ## intent:affirm
 - yes
@@ -44,14 +45,13 @@
 - 😊
 - 好👌
 - 哈
-- 👍
 - 對
 - 👌🏻
 - 👌
 - 哈哈
 - Ok
 - 沒事
-- 👍👍
+- 🤙
 
 ## intent:deny
 - no
@@ -64,9 +64,6 @@
 - 哦
 - 呀
 - 真的很久欸
-- 🤙
-- 很爛耶
-- 停
 - Clear
 - STOP
 - 閉嘴
@@ -90,7 +87,6 @@
 - 預約掛號
 - 進行預約
 - 預約號
-- [4/5](TIME)晚上
 
 ## intent:ask_call_number
 - 有營業嗎
@@ -109,7 +105,6 @@
 - 請問目前看診號碼？
 - 排隊進度
 - 看診通知
-- 提醒
 - 看診號碼
 - 叫號進度
 - 看診進度\n[張基亮](PERSON)
@@ -599,7 +594,7 @@
 - [陳志平](PERSON)
 - [宜昇](caller_name)
 - [曾正峰](caller_name)
-- 加恩[診所](caller_name)
+- [加恩診所](caller_name)
 - [好日子](caller_name)[仁愛](LOC)
 - [平衡身心](caller_name)科診所
 - [介壽](caller_name)耳鼻喉科
@@ -664,7 +659,7 @@
 - 濟揚
 - [澳門羅子超醫生](caller_name)[羅子超](PERSON)醫生
 - [羅子](caller_name)超
-- 謝碧[祥眼科](caller_name)
+- [謝碧祥眼科](caller_name)
 - [吳文](PERSON)豹
 - [心寬診所](caller_name)
 - [康澄](caller_name)
@@ -698,7 +693,7 @@
 - 4002
 - [15](notify_number)號提醒
 - 91
-- 抱歉，改[35](notify_number)號請通知
+- 改[35](notify_number)號請通知
 - [6號](notify_number)通知
 - [16號](notify_number)通知
 - [22號](notify_number)通知
@@ -733,7 +728,6 @@
 - 14
 - [23](notify_number)號叫我
 - [22](notify_number)號叫我
-- 婦產科202診到[20](notify_number)號
 - 29號
 - 29
 - 14號
@@ -742,6 +736,7 @@
 - 我是17號
 - 3
 - 到14號
+- 4
 
 ## intent:start
 - help
@@ -784,10 +779,7 @@
 - 請教一下
 
 ## intent:over_number
-- 過號才通知？
-- 已經過號了
 - 過號才通知
-- 這個通知不準確
 - 這個通知不准
 - 過號了
 
