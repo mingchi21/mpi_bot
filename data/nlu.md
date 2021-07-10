@@ -73,6 +73,7 @@
 - 閉嘴
 - 結束
 - 靠腰喔
+- 廢
 
 ## intent:booking
 - 預約
@@ -671,6 +672,10 @@
 - 寰東
 - [李威翰](caller_name)
 - [羅旗守](PERSON)
+- 錦禾中醫診所
+- [AS快剪](caller_name)
+- 朱智盟
+- 奇譽
 
 ## intent:inform_notify_number
 - 10
@@ -762,6 +767,8 @@
 - 不用再通知了
 - 忽略通知
 - 幫我取消
+- 取消叫號
+- 取消提醒
 
 ## intent:no_notify
 - 不用通知
