@@ -35,12 +35,6 @@ intents:
     use_entities: true
 - i_caller:
     use_entities: true
-- i_appoint:
-    use_entities: true
-- i_can_appt:
-    use_entities: true
-- i_booking_url:
-    use_entities: true
 - update_call_number:
     use_entities: true
 - over_number:
@@ -49,11 +43,11 @@ intents:
     use_entities: true
 - cancel_notify:
     use_entities: true
-- booking_change:
-    use_entities: true
 - end:
     use_entities: true
 - cancel_register:
+    use_entities: true
+- i_booking_url:
     use_entities: true
 entities:
 - inform
@@ -147,7 +141,6 @@ actions:
 - action_notify_number
 - action_inform_appointment
 - action_get_booking_url
-- action_cancel_appointment
 - action_update_call_number
 forms: {}
 e2e_actions: []

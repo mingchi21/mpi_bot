@@ -377,18 +377,10 @@ rules:
   steps:
   - intent: over_number
   - action: utter_over_number_hint
-- rule: Inform appointment
-  steps:
-  - intent: i_appoint
-  - action: action_inform_appointment
 - rule: Get booking url
   steps:
   - intent: i_booking_url
   - action: action_get_booking_url
-- rule: Cancel appointment
-  steps:
-  - intent: i_can_appt
-  - action: action_cancel_appointment
 - rule: Start
   steps:
   - intent: start

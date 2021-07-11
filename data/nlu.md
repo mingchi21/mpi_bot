@@ -24,7 +24,6 @@
 - 謝
 - 愛妳
 - 酷喔
-- Got it
 - Thanks
 - 了解。謝謝您
 - 3Q
@@ -35,6 +34,7 @@
 ## intent:affirm
 - yes
 - ok
+- Got it
 - 好的
 - 好
 - 行
@@ -54,6 +54,7 @@
 - 🤙
 - ^_^
 - 知道了
+- 哦哦哦
 
 ## intent:deny
 - no
@@ -72,6 +73,7 @@
 - 結束
 - 靠腰喔
 - 廢
+- 好爛
 
 ## intent:booking
 - 預約
@@ -92,36 +94,29 @@
 - 預約號
 
 ## intent:ask_call_number
+- 目前
+- 進度
+- 幾號
 - 有營業嗎
 - 有看診嗎
-- 幾號了
-- 幾號了？
-- 請問幾號了
 - 請問幾號
-- 看診進度
-- 看診
-- 幾號
-- 要排隊通知
 - 叫號通知
 - 問事進度
 - 看诊进度
-- 請問目前看診號碼？
+- 看珍進度
 - 排隊進度
 - 看診通知
 - 看診號碼
 - 叫號進度
-- 看診進度\n[張基亮](PERSON)
-- 看珍進度
-- 看整進度
-- 目前
-- 看診紀錄
-- 進度
+- 要排隊通知
+- 請問目前看診號碼？
 
 ## intent:update_call_number
+- 幾號了
+- 現在勒
 - 到幾號了
 - 現在幾號
 - 現在幾號了
-- 現在勒
 - 現在到幾號了
 - 現在幾號呢
 - 現在幾號了？
@@ -178,7 +173,7 @@
 - [傅仁良](PERSON)
 - [傅仁良診所](caller_name)
 - [翁佩魁診所](caller_name)
-- 加恩
+- [加恩](caller_name)
 - 加恩耳鼻喉科
 - [楊啟坤](PERSON)
 - [王銘燦](PERSON)
@@ -264,7 +259,7 @@
 - [平衡身心診所](caller_name)
 - [翁佩魁](caller_name)
 - [好日子](caller_name)
-- 查詢[仁愛好日子](caller_name)診所進度
+- [仁愛好日子](caller_name)診所進度
 - [仁愛好日子](caller_name)
 - [張賴](PERSON)[妙珣](PERSON)[皮膚](ORG)科診所
 - [志勛](PERSON)
@@ -284,7 +279,7 @@
 - [鳳山](GPE)[元新眼科](caller_name)
 - [周志哲](PERSON)
 - [立悅](caller_name)[皮膚](ORG)
-- 110年[輔英盃](caller_name)全國跆拳道錦標賽
+- [輔英盃](caller_name)全國跆拳道錦標賽
 - [高端](caller_name)
 - [陳嘉偉](PERSON)
 - [德儀](caller_name)
@@ -302,7 +297,7 @@
 - [杏倫](caller_name)
 - [蕭正輝](PERSON)
 - [陳怡穎](PERSON)皮膚科診所
-- [新竹市](LOC)阮皮膚科
+- [新竹市](LOC)[阮皮膚科](caller_name)
 - [曾憲彰](PERSON)看診進度
 - [京辰](caller_name)耳鼻喉科
 - 甘霖中醫診所
@@ -332,7 +327,6 @@
 - [詠恆中醫](caller_name)
 - [光彩](caller_name)
 - [楊啟坤](PERSON)耳鼻喉科
-- [楊啟坤](PERSON)耳鼻喉科診所
 - [居仁堂](caller_name)中醫診所
 - [大里仁愛](caller_name)醫院
 - [嘉恩](caller_name)耳鼻喉科診所
@@ -386,10 +380,8 @@
 - [家安](caller_name)小兒科
 - 何秋燕皮膚診所
 - [戴國城](PERSON)
-- [二林](caller_name)皮膚科
 - [璺到底](caller_name)皮膚專科
 - [志勛](PERSON)[皮膚](ORG)科診所
-- [我家牛排](caller_name) 245
 - 桃園[北天府](caller_name)[龍天宮](caller_name)
 - [鄭仲欽](PERSON)
 - [光點眼科](caller_name)
@@ -471,12 +463,11 @@
 - [光彩](caller_name)皮膚科
 - [右東診所](caller_name)
 - [桃園](GPE)[光彩親子](caller_name)皮膚專科聯合診所
-- 皮膚科
 - [桃園](GPE)層峰[診所](caller_name)
 - [張賴妙](PERSON)
 - [麒安診所](caller_name)
 - [正馨](caller_name)
-- 阮皮膚
+- [阮皮膚](caller_name)
 - [右東中醫](caller_name)
 - [盧正欽](caller_name)
 - [華陽中醫](caller_name)
@@ -556,7 +547,6 @@
 - [周博治](PERSON)婦產科
 - [活力](caller_name)
 - 桃園[龍天宮](ORG)
-- 中和
 - [員林基督](caller_name)
 - [鴻佑](caller_name)
 - [龍新](caller_name)耳鼻喉科
@@ -571,7 +561,6 @@
 - 曹錦雄小兒科
 - 曹錦雄
 - [新視界眼科](caller_name)
-- [新视界眼科](caller_name)
 - [光彩](caller_name)[皮膚親子](ORG)
 - 漢諾威
 - [宜昇](caller_name)復健
@@ -593,7 +582,6 @@
 - [國華](caller_name)
 - [康兒診所](caller_name)
 - [亞東](caller_name)
-- 台大
 - [陳志平](PERSON)
 - [宜昇](caller_name)
 - [曾正峰](caller_name)
@@ -621,7 +609,6 @@
 - [陳昱](PERSON)傑骨科診所
 - [陳毅傑](PERSON)骨科診所
 - [德儀](caller_name)皮膚科
-- 110年南瀛
 - [林怡廷](PERSON)[皮膚](ORG)
 - [四季](caller_name)
 - [詠美](caller_name)
@@ -798,11 +785,6 @@
 - 過號才通知
 - 這個通知不准
 - 過號了
-
-## intent:booking_change
-- 請問可以改約7:30嗎
-- 修改預約
-- 可以幫我排到下午看診嗎
 
 ## intent:cancel_register
 - 我要取消掛號
