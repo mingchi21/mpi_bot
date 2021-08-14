@@ -5,6 +5,8 @@
 - 嗨
 - Hi
 - hello
+- 啾咪
+- 早安
 
 ## intent:goodbye
 - 再見
@@ -30,6 +32,10 @@
 - 好的謝謝
 - 👍👍
 - 👍
+- 你好棒
+- 謝謝❤️❤️❤️
+- 謝謝🙏
+- 好了謝謝
 
 ## intent:affirm
 - yes
@@ -55,6 +61,7 @@
 - ^_^
 - 知道了
 - 哦哦哦
+- 了解
 
 ## intent:deny
 - no
@@ -92,6 +99,10 @@
 - 預約掛號
 - 進行預約
 - 預約號
+- 有掛號功能嗎
+- 有沒有掛號功能ㄋ
+- i would like to make an appointment for today
+- 明天早上預約
 
 ## intent:ask_call_number
 - 目前
@@ -110,6 +121,8 @@
 - 叫號進度
 - 要排隊通知
 - 請問目前看診號碼？
+- 看診進度
+- 什麼時候到我
 
 ## intent:update_call_number
 - 幾號了
@@ -661,6 +674,28 @@
 - [AS快剪](caller_name)
 - 朱智盟
 - 奇譽
+- A.S快剪
+- [陳景](PERSON)
+- [羽田](caller_name)
+- 瑪家[晨安](caller_name)診所
+- [吉安](caller_name)中醫診所
+- [幸聲](caller_name)耳鼻喉專科
+- [維品](caller_name)
+- [吳](PERSON)[世安](caller_name)
+- [邢志宇](PERSON)診所
+- [楊超博](PERSON)
+- [保惠](caller_name)
+- [跆拳道](caller_name)
+- [善來](caller_name)
+- [善來診所](caller_name)
+- [柯瑞宏](caller_name)
+- [錦禾](caller_name)
+- [怡康堂](caller_name)
+- [怡康堂中](caller_name)醫診所
+- 桃園北府[龍天宮](ORG) 19號
+- 放開心[精神](caller_name)科診所
+- [謝碧祥](PERSON)
+- 中壢[文聖診所](caller_name)
 
 ## intent:inform_notify_number
 - 10
@@ -736,6 +771,8 @@
 - 到14號
 - 4
 - 7號再跟我說一下
+- 60 65 70
+- 18
 
 ## intent:start
 - help
@@ -754,6 +791,7 @@
 - 幫我取消
 - 取消叫號
 - 取消提醒
+- 取消，謝謝
 
 ## intent:no_notify
 - 不用通知
@@ -775,6 +813,7 @@
 - 什麼都可以問嗎？
 - 請問眼皮癢可以看皮膚科嗎？
 - ?
+- 你是機器人嗎
 
 ## intent:ask_something
 - 請教一下
@@ -788,3 +827,11 @@
 
 ## intent:cancel_register
 - 我要取消掛號
+
+## intent:inform_time
+- [PM 18:40](TIME)
+- [18:50](TIME)
+
+## intent:help
+- 幫助
+- 幫忙
