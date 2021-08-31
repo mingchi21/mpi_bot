@@ -36,6 +36,7 @@
 - 謝謝❤️❤️❤️
 - 謝謝🙏
 - 好了謝謝
+- [顏威裕](PERSON)
 
 ## intent:affirm
 - yes
@@ -62,6 +63,7 @@
 - 知道了
 - 哦哦哦
 - 了解
+- [😁👍](caller_name)
 
 ## intent:deny
 - no
@@ -138,6 +140,8 @@
 - 現在是幾號
 - 現在幾號？
 - 現在
+- 幾號了呢
+- 現在號碼
 
 ## intent:inform_caller_name
 - [竹安眼科](caller_name)
@@ -696,6 +700,61 @@
 - 放開心[精神](caller_name)科診所
 - [謝碧祥](PERSON)
 - 中壢[文聖診所](caller_name)
+- [蕭昊天](caller_name)
+- [蕭皓天](PERSON)皮膚科
+- [黃紹基診所](caller_name)
+- [調明](caller_name)
+- [調明中醫](caller_name)
+- [啟禾](caller_name)[皮膚](ORG)診所
+- 寶山[風澤](caller_name)
+- 何翊菁
+- 大業[風澤](caller_name)中醫診所
+- [開馨診所](caller_name)
+- 目前[王銘燦](PERSON)[皮膚](ORG)科到幾號了
+- [怡美](caller_name)
+- [和沛](PERSON)
+- [親禾身心診所](caller_name)
+- [禾心](caller_name)
+- 宜康
+- [文聖](caller_name)
+- [長庚](caller_name)
+- [埔心](GPE)[風澤](caller_name)
+- [放開心](caller_name)
+- [大鵬](caller_name)
+- [李亭峰](ORG)耳鼻喉科診所
+- 竹北[竹安](caller_name)
+- [柯瑞宏](caller_name)醫生
+- [楊梅風澤中醫](GPE)
+- [松青診所](caller_name)
+- [李松青](caller_name)
+- [李芳樑](caller_name)[皮膚](ORG)科診所
+- [妍蓁](caller_name)[皮膚](ORG)科診所
+- [宜昇](caller_name)復健科
+- [妍蓁](PERSON)皮膚科
+- [明仁診所](caller_name)
+- [德儀診所](caller_name)
+- [南崁](GPE)[風澤](caller_name)中醫診所
+- [永吉診所](caller_name)
+- [風澤](caller_name)蘆山[分院](caller_name)
+- 桃園[北天府](caller_name)
+- 陳怡穎皮膚科
+- [安倍診所](caller_name)
+- [陽光](caller_name)
+- [杏倫](caller_name)皮膚科
+- [羅琪守](PERSON)
+- 㼂[到底](caller_name)
+- [立丞診所](caller_name)
+- [施朝仁](caller_name)
+- [宜昇](caller_name)復健診所
+- [心悅診所](caller_name)
+- [林怡庭](PERSON)
+- 站前內壢[風澤](caller_name)
+- [李文豪](PERSON)
+- [杏倫](caller_name)[皮膚](ORG)科診所
+- [張賴](PERSON)
+- [健雄](caller_name)
+- 問[到底](caller_name)
+- [雲玖中醫](caller_name)
 
 ## intent:inform_notify_number
 - 10
@@ -773,6 +832,10 @@
 - 7號再跟我說一下
 - 60 65 70
 - 18
+- [60](notify_number)號通知我
+- 到[30](notify_number)號或31號先通知我
+- [15](notify_number)[、](caller_name)[16](notify_number)
+- 一診19
 
 ## intent:start
 - help
@@ -792,11 +855,13 @@
 - 取消叫號
 - 取消提醒
 - 取消，謝謝
+- 不用了
 
 ## intent:no_notify
 - 不用通知
 - 不必通知
 - 不要通知
+- 不用
 
 ## intent:ask_start_time
 - 幾點開始
