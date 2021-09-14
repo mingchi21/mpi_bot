@@ -37,6 +37,9 @@
 - 謝謝🙏
 - 好了謝謝
 - [顏威裕](PERSON)
+- Tks
+- 看完了，謝謝
+- 謝囉
 
 ## intent:affirm
 - yes
@@ -64,6 +67,7 @@
 - 哦哦哦
 - 了解
 - [😁👍](caller_name)
+- 好 要通知喔
 
 ## intent:deny
 - no
@@ -83,6 +87,7 @@
 - 靠腰喔
 - 廢
 - 好爛
+- 不是
 
 ## intent:booking
 - 預約
@@ -755,6 +760,28 @@
 - [健雄](caller_name)
 - 問[到底](caller_name)
 - [雲玖中醫](caller_name)
+- [馬大元](PERSON)看診
+- [蔡雅敏](caller_name)
+- 樹[新](caller_name)耳鼻喉科
+- [放開心診所](caller_name)
+- [福山](caller_name)[雲玖](caller_name)
+- 黃郁琳皮膚科診所
+- 請問 [戴國城](PERSON)診所
+- [黃郁琳](caller_name)
+- [柯瑞宏](caller_name)皮膚專科診所
+- [吳](PERSON)[四維診所](caller_name)
+- [保惠](caller_name)中醫診所
+- [進安身心](caller_name)診[所](caller_name)
+- 朱水松耳鼻喉科 蔡瓊倩內科診所
+- [馬大元](PERSON)醫生
+- 請問 [王銘燦](PERSON)[皮膚](ORG)科診所 到幾號要通知您呢？
+- d
+- [夏安](caller_name)皮膚科
+- [優康家](caller_name)[優康家](caller_name)
+- [文化](caller_name)[皮膚](ORG)科診所
+- [練穎](caller_name)[霜](ORG)
+- [陳文](PERSON)橋骨科
+- [羽田診所](caller_name)
 
 ## intent:inform_notify_number
 - 10
@@ -836,6 +863,10 @@
 - 到[30](notify_number)號或31號先通知我
 - [15](notify_number)[、](caller_name)[16](notify_number)
 - 一診19
+- 23
+- 1
+- 83號
+- 93號
 
 ## intent:start
 - help
@@ -856,6 +887,7 @@
 - 取消提醒
 - 取消，謝謝
 - 不用了
+- 取消149
 
 ## intent:no_notify
 - 不用通知
