@@ -782,6 +782,12 @@
 - [練穎](caller_name)[霜](ORG)
 - [陳文](PERSON)橋骨科
 - [羽田診所](caller_name)
+- [希望心靈診所](caller_name)
+- [李聰明](caller_name)
+- [放開心身心](caller_name)[精神](caller_name)科診所
+- [練穎](caller_name)[練穎霜](PERSON)婦產科
+- [欣泉診所](caller_name)
+- [周博治](PERSON)婦產科診所
 
 ## intent:inform_notify_number
 - 10
